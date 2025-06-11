@@ -1,120 +1,54 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8f5; /* Cor de fundo suave */
-    color: #333; /* Cor do texto */
-    margin: 0;
-    padding: 0;
-}
+/* estilo_campo_cidade.css */
 
-/* Cabeçalho */
-header {
-    background-color: #4CAF50; /* Verde suave */
-    padding: 20px;
-    text-align: center;
-}
+/* Reset básico */
+
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+
+body { background-color: #fffdf7; color: #333; line-height: 1.6; }
+
+header { background: url('caminho-da-imagem-campo-cidade.jpg') center/cover no-repeat; padding: 4rem 2rem; color: #fff; text-align: center; }
+
+header h1 { font-size: 3rem; font-weight: bold; text-shadow: 2px 2px 5px #000; margin-bottom: 1rem; }
+
+header p { max-width: 700px; margin: 0 auto 1.5rem; font-size: 1.2rem; }
+
+nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; padding: 1rem; background-color: rgba(255, 255, 255, 0.8); backdrop-filter: blur(5px); }
+
+nav a { text-decoration: none; color: #5c3d00; font-weight: bold; transition: color 0.3s; }
+
+nav a:hover { color: #ff9900; }
+
+main { padding: 2rem; }
+
+.conteudo { margin-bottom: 3rem; }
+
+.conteudo h2 { font-size: 2rem; color: #4b2800; margin-bottom: 1rem; position: relative; }
+
+.conteudo h2::after { content: ''; width: 50px; height: 4px; background: #ff9900; position: absolute; bottom: -10px; left: 0; }
+
+.conteudo article { background: #fff; padding: 1.5rem; margin-bottom: 1rem; border-left: 5px solid #ffcc00; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+.imagens { text-align: center; background: #f5f2ec; padding: 2rem; }
+
+.imagens h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+
+.imagens img { max-width: 250px; margin: 1rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+
+.imagens img:hover { transform: scale(1.05); }
+
+footer { background-color: #333; color: #fff; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+
+footer img { max-width: 150px; margin-bottom: 1rem; filter: brightness(0) invert(1); }
+
+@media (max-width: 768px) { nav ul { flex-direction: column; gap: 1rem; }
 
 header h1 {
-    margin: 0;
-    color: #fff;
-    font-size: 2.5em;
-}
-
-header img {
-    max-width: 150px;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 8px;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #f0f0f0;
-}
-
-/* Menu de navegação */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: #45a049;
-}
-
-/* Conteúdo principal */
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Seções */
-.conteudo {
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
-}
-
-article {
-    background-color: #fff;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-article h3 {
-    margin-top: 0;
-    color: #333;
-}
-
-/* Galeria de imagens */
-.imagens {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+    font-size: 2rem;
 }
 
 .imagens img {
-    max-width: 200px;
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    max-width: 90%;
 }
 
-.imagens img:hover {
-    transform: scale(1.05);
-}
-
-.rodape{
-    background-color: black;
-    text-align: center;
-}
-
-.rodape-imagem {
-    height: 60px;
-    padding: 12px 0;
 }
